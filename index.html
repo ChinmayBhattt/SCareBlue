@@ -3,65 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LightHack - Meet The Team</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chinmay Bhatt - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: #f4f4f9;">
-
-    <header>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
         <div class="container">
-            <h1>Welcome to LightHack</h1>
-            <h2>Meet Our Team</h2>
+            <div class="personal-profile">
+                <h1 class="personal-profile__name">Chinmay Bhatt</h1>
+                <p class="personal-profile__work">Web Developer | C++ Developer | Python Enthusiast</p>
+            </div>
         </div>
     </header>
 
-    <div class="team-container">
-        <!-- Member 1 -->
-        <div class="team-member">
-            <img src="images/chinmaypic.jpg" alt="Chinmay Bhatt">
-            <h3>Chinmay Bhatt</h3>
-            <p><strong>Role:</strong> Team Lead</p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/ChinmayBhattt" target="_blank">ChinmayBhattt</a></p>
-            <p><strong>Email:</strong> <a href="mailto:chinmaybhatt26@gmail.com">chinmaybhatt26@gmail.com</a></p>
-            <p><strong>Skills:</strong> Web Development, App Development, C++, Python</p>
-        </div>
+    <!-- Navigation Menu -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- Member 2 -->
-        <div class="team-member">
-            <img src="images/member2.jpg" alt="Teammate 2">
-            <h3>Teammate 2</h3>
-            <p><strong>Role:</strong> Developer</p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/teammate2" target="_blank">Teammate2</a></p>
-            <p><strong>Email:</strong> <a href="mailto:teammate2@example.com">teammate2@example.com</a></p>
-            <p><strong>Skills:</strong> AI, Machine Learning, Python</p>
+    <!-- About Me Section -->
+    <section id="hello" class="container section">
+        <div class="row">
+            <div class="col-md-12 col-lg-10 mx-auto">
+                <h2 class="section__title">About Me</h2>
+                <p class="section__description">I have 2.5 years of experience in WordPress development, C++, and Python. I create user-friendly websites and applications, solving technical challenges.</p>
+                <a href="resume/ChinmayResume.pdf" target="_blank" class="site-btn"><span><i class="fa fa-download" aria-hidden="true"></i></span>Download Resume</a>
+            </div>
         </div>
+    </section>
 
-        <!-- Member 3 -->
-        <div class="team-member">
-            <img src="images/member3.jpg" alt="Teammate 3">
-            <h3>Teammate 3</h3>
-            <p><strong>Role:</strong> Designer</p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/teammate3" target="_blank">Teammate3</a></p>
-            <p><strong>Email:</strong> <a href="mailto:teammate3@example.com">teammate3@example.com</a></p>
-            <p><strong>Skills:</strong> Graphic Design, UI/UX Design, Web Design</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container section">
+        <h2 class="section__title">My Projects</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="project-card">
+                    <div class="project-card__img">
+                        <img src="project-image-1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-card__info">
+                        <h3 class="project-card__title">Project 1</h3>
+                        <p class="project-card__subtitle">Web Development</p>
+                        <p class="project-card__description">A modern website built using HTML, CSS, and JavaScript.</p>
+                        <ul class="project-card__stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="project-card">
+                    <div class="project-card__img">
+                        <img src="project-image-2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-card__info">
+                        <h3 class="project-card__title">Project 2</h3>
+                        <p class="project-card__subtitle">C++ Development</p>
+                        <p class="project-card__description">A command-line application created using C++ to manage tasks.</p>
+                        <ul class="project-card__stack">
+                            <li>C++</li>
+                            <li>OOP</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- Member 4 -->
-        <div class="team-member">
-            <img src="images/member4.jpg" alt="Teammate 4">
-            <h3>Teammate 4</h3>
-            <p><strong>Role:</strong> Backend Developer</p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/teammate4" target="_blank">Teammate4</a></p>
-            <p><strong>Email:</strong> <a href="mailto:teammate4@example.com">teammate4@example.com</a></p>
-            <p><strong>Skills:</strong> Backend Development, APIs, Python, Node.js</p>
+    <!-- Resume Section -->
+    <section id="resume" class="container section">
+        <h2 class="section__title">My Resume</h2>
+        <div class="resume-list">
+            <div class="resume-list__block">
+                <h3 class="resume-list__block-title">Experience</h3>
+                <p class="resume-list__block-date">2022 - Present</p>
+                <p class="resume-list__block-description">Web Developer at XYZ Company</p>
+            </div>
+            <div class="resume-list__block">
+                <h3 class="resume-list__block-title">Education</h3>
+                <p class="resume-list__block-date">2018 - 2022</p>
+                <p class="resume-list__block-description">Bachelor of Science in Computer Science</p>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="container section">
+        <h2 class="section__title">Contact Me</h2>
+        <form action="#" method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="col-md-12">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="site-btn">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 LightHack. All Rights Reserved.</p>
+        <div class="footer-bottom-section">
+            <div class="container">
+                <div class="personal-profile__social">
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
