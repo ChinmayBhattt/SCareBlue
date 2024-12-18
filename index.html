@@ -7,33 +7,49 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        .team-container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
             padding: 20px;
+            background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
-        h1, h2 {
+        h1 {
             text-align: center;
+            color: #444;
         }
-        .member {
+        .team-member {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px;
             border-bottom: 1px solid #ddd;
-            padding: 10px 0;
         }
-        .member:last-child {
+        .team-member:last-child {
             border-bottom: none;
         }
-        .member h3 {
-            margin: 0;
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 15px;
         }
-        .member p {
+        .team-details {
+            flex: 1;
+        }
+        .team-details h3 {
+            margin: 0;
+            color: #007BFF;
+        }
+        .team-details p {
             margin: 5px 0;
+            font-size: 14px;
         }
         a {
             color: #007BFF;
@@ -45,26 +61,52 @@
     </style>
 </head>
 <body>
-    <div class="team-container">
-        <h1>Welcome to LightHack</h1>
-        <h2>Meet Our Team</h2>
-        <!-- Member 1 -->
-        <div class="member">
-            <h3>Chinmay Bhatt</h3>
-            <p><strong>GitHub:</strong> <a href="https://github.com/chinmaybhatt" target="_blank">github.com/chinmaybhatt</a></p>
-            <p><strong>Email:</strong> chinmay@example.com</p>
-            <p><strong>Contact:</strong> +91-1234567890</p>
-            <p><strong>About:</strong> Team Lead with expertise in web and app development.</p>
+    <div class="container">
+        <h1>Meet the LightHack Team</h1>
+
+        <!-- Team Member 1 -->
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Chinmay Bhatt">
+            <div class="team-details">
+                <h3>Chinmay Bhatt</h3>
+                <p><strong>GitHub:</strong> <a href="https://github.com/ChinmayBhatt" target="_blank">github.com/ChinmayBhatt</a></p>
+                <p><strong>Email:</strong> chinmay@example.com</p>
+                <p><strong>About:</strong> Team Lead, web developer and app developer.</p>
+            </div>
         </div>
-        <!-- Member 2 -->
-        <div class="member">
-            <h3>Teammate 2</h3>
-            <p><strong>GitHub:</strong> <a href="https://github.com/teammate2" target="_blank">github.com/teammate2</a></p>
-            <p><strong>Email:</strong> teammate2@example.com</p>
-            <p><strong>Contact:</strong> +91-9876543210</p>
-            <p><strong>About:</strong> Skilled in AI and machine learning.</p>
+
+        <!-- Team Member 2 -->
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 2">
+            <div class="team-details">
+                <h3>Teammate 2</h3>
+                <p><strong>GitHub:</strong> <a href="https://github.com/member2" target="_blank">github.com/member2</a></p>
+                <p><strong>Email:</strong> teammate2@example.com</p>
+                <p><strong>About:</strong> Backend developer and AI enthusiast.</p>
+            </div>
         </div>
-        <!-- Add more members as needed -->
+
+        <!-- Team Member 3 -->
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 3">
+            <div class="team-details">
+                <h3>Teammate 3</h3>
+                <p><strong>GitHub:</strong> <a href="https://github.com/member3" target="_blank">github.com/member3</a></p>
+                <p><strong>Email:</strong> teammate3@example.com</p>
+                <p><strong>About:</strong> UI/UX designer and creative lead.</p>
+            </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 4">
+            <div class="team-details">
+                <h3>Teammate 4</h3>
+                <p><strong>GitHub:</strong> <a href="https://github.com/member4" target="_blank">github.com/member4</a></p>
+                <p><strong>Email:</strong> teammate4@example.com</p>
+                <p><strong>About:</strong> Cloud computing expert and DevOps engineer.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
