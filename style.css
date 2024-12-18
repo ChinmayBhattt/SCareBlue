@@ -3,15 +3,15 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e9ecef;  /* Light gray background */
-    color: #333;
+    background-color: #f0f4f8;  /* Light blue-gray background */
+    color: #333;  /* Dark gray text */
     line-height: 1.6;
 }
 
 /* Headings */
 h1, h2 {
     text-align: center;
-    color: #333;  /* Dark gray text for headings */
+    color: #212529;  /* Black color for headings */
 }
 
 /* Container Styling */
@@ -29,7 +29,7 @@ h1, h2 {
     display: flex;
     align-items: center;
     background-color: #ffffff;  /* White background for cards */
-    border: 1px solid #007bff;  /* Blue border */
+    border: 1px solid #aad8e6;  /* Light blue border */
     border-radius: 10px;
     margin: 20px 0;
     padding: 15px;
@@ -61,7 +61,7 @@ h1, h2 {
 .team-details h3 {
     margin: 0;
     font-size: 1.5rem;
-    color: #007BFF;  /* Blue for team member name */
+    color: #212529;  /* Black for team member name */
 }
 
 .team-details p {
@@ -72,13 +72,13 @@ h1, h2 {
 
 .team-details a {
     text-decoration: none;
-    color: #28a745;  /* Green for links */
+    color: #17a2b8;  /* Light blue for links */
     font-weight: bold;
 }
 
 .team-details a:hover {
     text-decoration: underline;
-    color: #218838;  /* Darker green on hover */
+    color: #138496;  /* Darker blue for links on hover */
 }
 
 /* Responsive Design */
